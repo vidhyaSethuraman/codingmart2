@@ -11,13 +11,49 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
         <link rel="stylesheet" type="text/css" href="style.css">
-        <link rel="shortcut icon" href="ImagesTask2/icon.png">
+        <link rel="shortcut icon" href="imagesTask2/icon.png">
         <title>Declathon Recreation</title>
-
     </head>
 
-    <body>
-        
+    <body  onload="Locationdet()">
+    <div class="modal fade" id="locationModel1" tabindex="-3" role="dialog"  aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div style="height: 450px;width:730px;background-color: white ;">
+                    <span class="closebutton-modal" data-dismiss="modal">&#10005;</span>
+                    <div class="flex-container2">
+                        <div class="container-left">
+                            <div style="margin-left: 15px;padding-top: 30px;">
+                                <h1>Location</h1>
+                                <p style="line-height: 0em;">Select your location/Address to see accurate</p>
+                                <p>accurate product delivary date</p>
+                                <br>
+                                <center><img src="ImagesTask2/location.svg" alt=""></center>
+                            </div>
+                        </div>
+                        <div class="container-right">
+                            <div style="padding-top: 50px;padding-left: 60px;">
+                                <h3>Select address</h3>
+                                <div class="button-background">
+                                    <p>Login to view your save delivary address</p>
+                                    <div class="modal-button1">Login</div>
+                                </div>
+                                <br>
+                                <p style="padding-left: 160px;">OR</p>
+                                
+                                <h3>Pincode</h3>
+                                <div class="button-background">
+                                    <p>Enter a pincode</p>
+                                    <input class="modal-inputbox" type="text" placeholder="641012">
+                                    <div class="modal-button2">Apply</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+          </div>
+        </div>
         <div class="covid-text">
             COVID-19: <a href=""> Find the answers to our frequently asked questions</a>
             <span style="float: right;">&#10005;</span>
@@ -62,9 +98,10 @@
 
         <div class="delivery-division" >
             <p style="display: inline;">Delivering to <span style="font-weight: bold;">632007 Vellore &nbsp;&nbsp;</span> </p> 
-            <button>CHANGE</button>
+            <button onclick="Locationdet()">CHANGE</button>
         </div>
 
+                
         <div id="carouselExampleIndicators1" class="carousel slide" data-ride="carousel">
             <ol class="carousel-indicators">
                 <li data-target="#carouselExampleIndicators1" data-slide-to="0" class="active"></li>
@@ -494,6 +531,8 @@
             </tr>
         </table>
 
+
+
         <br> <br> <br>
     
         <div class="banner-holder"><p>Quarantined at home?</p></div>
@@ -907,16 +946,21 @@
 
         <div class="twig"></div>
 
-        <div >  
-            <span class="clr_blue"></span>
-            <span class="clr_orange"></span>
-            <span class="clr_green"></span>
-        </div>
+            <div >  
+                <span class="clr_blue"></span>
+                <span class="clr_orange"></span>
+                <span class="clr_green"></span>
+            </div>
 
 
     </body>
 
     <script>
+        function Locationdet()
+        {
+            $('#locationModel1').modal('show');
+        }
+
         $(document).ready(function () 
         {
             var itemsMainDiv = ('.MultiCarousel');
@@ -934,10 +978,13 @@
 
             ResCarouselSize();
 
+
+
             $(window).resize(function () {
                 ResCarouselSize();
             });
 
+            
             function ResCarouselSize() {
                 var incno = 0;
                 var dataItems = ("data-items");
