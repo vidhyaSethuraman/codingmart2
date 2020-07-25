@@ -11,7 +11,7 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
         <link rel="stylesheet" type="text/css" href="style.css">
-        <link rel="shortcut icon" href="ImagesTask2/icon.png">
+        <link rel="shortcut icon" href="imagesTask2/icon.png">
         <title>Declathon Recreation</title>
     </head>
 
@@ -19,11 +19,11 @@
     <div class="modal fade" id="locationModel1" tabindex="-3" role="dialog"  aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered" role="document">
             <div class="modal-content">
-                <div style="height: 450px;width:730px;background-color: white ;">
+                <div class="location-model-popup">
                     <span class="closebutton-modal" data-dismiss="modal">&#10005;</span>
                     <div class="flex-container2">
                         <div class="container-left">
-                            <div style="margin-left: 15px;padding-top: 30px;">
+                            <div class="container-left-boundry">
                                 <h1>Location</h1>
                                 <p style="line-height: 0em;">Select your location/Address to see accurate</p>
                                 <p>accurate product delivary date</p>
@@ -32,7 +32,7 @@
                             </div>
                         </div>
                         <div class="container-right">
-                            <div style="padding-top: 50px;padding-left: 60px;">
+                            <div class="container-right-boundry">
                                 <h3>Select address</h3>
                                 <div class="button-background">
                                     <p>Login to view your save delivary address</p>
@@ -40,7 +40,6 @@
                                 </div>
                                 <br>
                                 <p style="padding-left: 160px;">OR</p>
-                                
                                 <h3>Pincode</h3>
                                 <div class="button-background">
                                     <p>Enter a pincode</p>
@@ -97,7 +96,7 @@
         </div>
 
         <div class="delivery-division" >
-            <p style="display: inline;">Delivering to <span style="font-weight: bold;">632007 Vellore &nbsp;&nbsp;</span> </p> 
+            <p style="display: inline;">Delivering to <span style="font-weight: bold;">632007  &nbsp;Vellore &nbsp;</span> </p> 
             <button onclick="Locationdet()">CHANGE</button>
         </div>
 
@@ -181,9 +180,7 @@
         <br><br>
 
         <div class="flex-container">
-  
             <div class="bestseller-card"></div>
-          
                 <div class="container">
                     <div class="row">
                         <div class="MultiCarousel" data-items="1,2,3,4" data-slide="1" id="MultiCarousel"  data-interval="1000">
@@ -196,7 +193,7 @@
                                                     <div style="margin-bottom: 10px;" >
                                                         <p class="price_tag">&#8377; 599</p>
                                                     </div>
-                                                    <p style="margin-bottom: 12px;font-size: 16px;">PW Men's Fitness Walking shoes</p>
+                                                    <p class="product-description">PW Men's Fitness Walking shoes</p>
                                                     <div class="card_ratings">
                                                         <h6 class="rate_number">4.5/5</h6><i style=" color: gold;font-size: 16px " class="fa fa-star" aria-hidden="true"></i>
                                                     </div>
@@ -215,7 +212,7 @@
                                                         <p> MRP </p>
                                                         <p>&#8377; 16,999</p>
                                                     </div>
-                                                    <p style="margin-bottom: 12px;font-size: 16px;">RockRider ST-50 Mountain bike</p>
+                                                    <p class="product-description">RockRider ST-50 Mountain bike</p>
                                                     <div class="card_ratings">
                                                         <h6 class="rate_number">3.9/5</h6><i style=" color: gold;font-size: 16px " class="fa fa-star" aria-hidden="true"></i>
                                                     </div>
@@ -234,7 +231,7 @@
                                                         <p> MRP </p>
                                                         <p>&#8377; 999</p>
                                                     </div>
-                                                    <p style="margin-bottom: 12px;font-size: 16px;">Run 100 Mens Running shoes</p>
+                                                    <p class="product-description">Run 100 Mens Running shoes</p>
                                                     <div class="card_ratings">
                                                         <h6 class="rate_number">4.3/5</h6><i style=" color: gold;font-size: 16px " class="fa fa-star" aria-hidden="true"></i>
                                                     </div>
@@ -253,7 +250,7 @@
                                                         <p> MRP </p>
                                                         <p>&#8377; 699</p>
                                                     </div>
-                                                    <p style="margin-bottom: 12px;font-size: 16px;">Mens Country Walking Raincoat </p>
+                                                    <p class="product-description">Mens Country Walking Raincoat </p>
                                                     <div class="card_ratings">
                                                         <h6 class="rate_number">4.2/5</h6><i style=" color: gold;font-size: 16px " class="fa fa-star" aria-hidden="true"></i>
                                                     </div>
@@ -272,7 +269,7 @@
                                                         <p> MRP </p>
                                                         <p>&#8377; 999</p>
                                                     </div>
-                                                    <p style="margin-bottom: 12px;font-size: 16px;">Mens Rain Pants</p>
+                                                    <p class="product-description">Mens Rain Pants</p>
                                                     <div class="card_ratings">
                                                         <h6 class="rate_number">4.3/5</h6><i style=" color: gold;font-size: 16px " class="fa fa-star" aria-hidden="true"></i>
                                                     </div>
@@ -291,7 +288,7 @@
                                                         <p> MRP </p>
                                                         <p>&#8377; 14,999</p>
                                                     </div>
-                                                    <p style="margin-bottom: 12px;font-size: 16px;">Essential Excercise Bike</p>
+                                                    <p class="product-description">Essential Excercise Bike</p>
                                                     <div class="card_ratings">
                                                         <h6 class="rate_number">4.3/5</h6><i style=" color: gold;font-size: 16px " class="fa fa-star" aria-hidden="true"></i>
                                                     </div>
@@ -310,7 +307,7 @@
                                                         <p> MRP </p>
                                                         <p>&#8377; 18,999</p>
                                                     </div>
-                                                    <p style="margin-bottom: 12px;font-size: 16px;">EL 100 Cross Trainer</p>
+                                                    <p class="product-description">EL 100 Cross Trainer</p>
                                                     <div class="card_ratings">
                                                         <h6 class="rate_number">4.3/5</h6><i style=" color: gold;font-size: 16px " class="fa fa-star" aria-hidden="true"></i>
                                                     </div>
@@ -329,7 +326,7 @@
                                                         <p> MRP </p>
                                                         <p>&#8377; 6,999</p>
                                                     </div>
-                                                    <p style="margin-bottom: 12px;font-size: 16px;">Kids Cycle 10-12 Years Rockrider</p>
+                                                    <p class="product-description">Kids Cycle 10-12 Years Rockrider</p>
                                                     <div class="card_ratings">
                                                         <h6 class="rate_number">3.7/5</h6><i style=" color: gold;font-size: 16px " class="fa fa-star" aria-hidden="true"></i>
                                                     </div>
@@ -443,7 +440,7 @@
                                     <p> MRP </p>
                                     <p>&#8377; 249</p>
                                 </div>
-                                <p style="margin-bottom: 12px;font-size: 16px;">Bottle 0.75L -Green</p>
+                                <p class="product-description">Bottle 0.75L -Green</p>
                                 <div class="card_ratings">
                                     <h6 class="rate_number">4.6/5</h6><i style=" color: gold;font-size: 16px " class="fa fa-star" aria-hidden="true"></i>
                                 </div>
@@ -460,7 +457,7 @@
                                     <p> MRP </p>
                                     <p>299</p>
                                 </div>
-                                <p style="margin-bottom: 12px;font-size: 16px;">100 Plastic Screw Top Hiking Flask</p>
+                                <p class="product-description">100 Plastic Screw Top Hiking Flask</p>
                                 <div class="card_ratings">
                                     <h6 class="rate_number">4.3/5</h6><i style=" color: gold;font-size: 16px " class="fa fa-star" aria-hidden="true"></i>
                                 </div>
@@ -476,7 +473,7 @@
                                 <p> MRP </p>
                                 <p>&#8377; 299</p>
                             </div>
-                            <p style="margin-bottom: 12px;font-size: 16px;">Bottle 0.8 Tritian - Orange</p>
+                            <p class="product-description">Bottle 0.8 Tritian - Orange</p>
                             <div class="card_ratings">
                                 <h6 class="rate_number">4.5/5</h6><i style=" color: gold;font-size: 16px " class="fa fa-star" aria-hidden="true"></i>
                             </div>
@@ -492,7 +489,7 @@
                                 <p> MRP </p>
                                 <p>&#8377; 599</p>
                             </div>
-                            <p style="margin-bottom: 12px;font-size: 16px;">100 Aluminum Hiking Water Bottle</p>
+                            <p class="product-description">100 Aluminum Hiking Water Bottle</p>
                             <div class="card_ratings">
                                 <h6 class="rate_number">4.6/5</h6><i style=" color: gold;font-size: 16px " class="fa fa-star" aria-hidden="true"></i>
                             </div>
@@ -505,7 +502,7 @@
                                 <p> MRP </p>
                                 <p>&#8377; 999</p>
                             </div>
-                            <p style="margin-bottom: 12px;font-size: 16px;">500 Aluminum 1.5L Hiking Flask with...</p>
+                            <p class="product-description">500 Aluminum 1.5L Hiking Flask with...</p>
                             <div class="card_ratings">
                                 <h6 class="rate_number">4.5/5</h6><i style=" color: gold;font-size: 16px " class="fa fa-star" aria-hidden="true"></i>
                             </div>
@@ -520,7 +517,7 @@
                                 <p> MRP </p>
                                 <p>&#8377; 799</p>
                             </div>
-                            <p style="margin-bottom: 12px;font-size: 16px;">500 Aluminum 1L Hiking Flask with...</p>
+                            <p class="product-description">500 Aluminum 1L Hiking Flask with...</p>
                             <div class="card_ratings">
                                 <h6 class="rate_number">4.6/5</h6><i style=" color: gold;font-size: 16px " class="fa fa-star" aria-hidden="true"></i>
                             </div>
@@ -563,7 +560,7 @@
                                     <p> MRP </p>
                                     <p>&#8377; 1,499</p>
                                 </div>
-                                <p style="margin-bottom: 12px;font-size: 16px;">Folding Camping Chair Basic</p>
+                                <p class="product-description">Folding Camping Chair Basic</p>
                                 <div class="card_ratings">
                                     <h6 class="rate_number">4.6/5</h6><i style=" color: gold;font-size: 16px " class="fa fa-star" aria-hidden="true"></i>
                                 </div>
@@ -580,7 +577,7 @@
                                     <p> MRP </p>
                                     <p>&#8377; 1,399</p>
                                 </div>
-                                <p style="margin-bottom: 12px;font-size: 16px;">Folding Camping Coffee Table</p>
+                                <p class="product-description">Folding Camping Coffee Table</p>
                                 <div class="card_ratings">
                                     <h6 class="rate_number">4.2/5</h6><i style=" color: gold;font-size: 16px " class="fa fa-star" aria-hidden="true"></i>
                                 </div>
@@ -596,7 +593,7 @@
                                 <p> MRP </p>
                                 <p>&#8377; 4,999</p>
                             </div>
-                            <p style="margin-bottom: 12px;font-size: 16px;">Very Comfortable Folding Armchair</p>
+                            <p class="product-description">Very Comfortable Folding Armchair</p>
                             <div class="card_ratings">
                                 <h6 class="rate_number">4.7/5</h6><i style=" color: gold;font-size: 16px " class="fa fa-star" aria-hidden="true"></i>
                             </div>
@@ -612,7 +609,7 @@
                                 <p> MRP </p>
                                 <p>&#8377; 3,999</p>
                             </div>
-                            <p style="margin-bottom: 12px;font-size: 16px;">Folding Camping Chair -Grey</p>
+                            <p class="product-description">Folding Camping Chair -Grey</p>
                             <div class="card_ratings">
                                 <h6 class="rate_number">4.6/5</h6><i style=" color: gold;font-size: 16px " class="fa fa-star" aria-hidden="true"></i>
                             </div>
@@ -625,7 +622,7 @@
                                 <p> MRP </p>
                                 <p>&#8377; 1,299</p>
                             </div>
-                            <p style="margin-bottom: 12px;font-size: 16px;">Portable Camping Chair</p>
+                            <p class="product-description">Portable Camping Chair</p>
                             <div class="card_ratings">
                                 <h6 class="rate_number">4.5/5</h6><i style=" color: gold;font-size: 16px " class="fa fa-star" aria-hidden="true"></i>
                             </div>
@@ -640,7 +637,7 @@
                                 <p> MRP </p>
                                 <p>&#8377; 699</p>
                             </div>
-                            <p style="margin-bottom: 12px;font-size: 16px;">Camping Lamp BL 40 Lumens</p>
+                            <p class="product-description">Camping Lamp BL 40 Lumens</p>
                             <div class="card_ratings">
                                 <h6 class="rate_number">4.7/5</h6><i style=" color: gold;font-size: 16px " class="fa fa-star" aria-hidden="true"></i>
                             </div>
@@ -679,7 +676,7 @@
                                     <p> MRP </p>
                                     <p>&#8377; 1,499</p>
                                 </div>
-                                <p style="margin-bottom: 12px;font-size: 16px;">Gentle Yoga Mat 8mm - Burgundy</p>
+                                <p class="product-description">Gentle Yoga Mat 8mm - Burgundy</p>
                                 <div class="card_ratings">
                                     <h6 class="rate_number">4.3/5</h6><i style=" color: gold;font-size: 16px " class="fa fa-star" aria-hidden="true"></i>
                                 </div>
@@ -696,7 +693,7 @@
                                     <p> MRP </p>
                                     <p>&#8377; 1,999</p>
                                 </div>
-                                <p style="margin-bottom: 12px;font-size: 16px;">Light Gentle Yoga Mat Club 5mm</p>
+                                <p class="product-description">Light Gentle Yoga Mat Club 5mm</p>
                                 <div class="card_ratings">
                                     <h6 class="rate_number">4.3/5</h6><i style=" color: gold;font-size: 16px " class="fa fa-star" aria-hidden="true"></i>
                                 </div>
@@ -712,7 +709,7 @@
                                 <p><del>&#8377; 499<del></p>
                                 <p><strong style="color: red;">20% off</strong></p>
                             </div>
-                            <p style="margin-bottom: 12px;font-size: 16px;">Woman's Yoga Organic Cotton Shirt</p>
+                            <p class="product-description">Woman's Yoga Organic Cotton Shirt</p>
                             <div class="card_ratings">
                                 <h6 class="rate_number">4.5/5</h6><i style=" color: gold;font-size: 16px " class="fa fa-star" aria-hidden="true"></i>
                             </div>
@@ -728,7 +725,7 @@
                                 <p> MRP </p>
                                 <p>&#8377; 899</p>
                             </div>
-                            <p style="margin-bottom: 12px;font-size: 16px;">Woman's Yoga Organic Cotton Pant</p>
+                            <p class="product-description">Woman's Yoga Organic Cotton Pant</p>
                             <div class="card_ratings">
                                 <h6 class="rate_number">4.6/5</h6><i style=" color: gold;font-size: 16px " class="fa fa-star" aria-hidden="true"></i>
                             </div>
@@ -741,7 +738,7 @@
                                 <p> MRP </p>
                                 <p>&#8377; 599</p>
                             </div>
-                            <p style="margin-bottom: 12px;font-size: 16px;">Essential Yoga Mat 4mm -Blue</p>
+                            <p class="product-description">Essential Yoga Mat 4mm -Blue</p>
                             <div class="card_ratings">
                                 <h6 class="rate_number">3.8/5</h6><i style=" color: gold;font-size: 16px " class="fa fa-star" aria-hidden="true"></i>
                             </div>
@@ -756,7 +753,7 @@
                                 <p> MRP </p>
                                 <p>&#8377; 499</p>
                             </div>
-                            <p style="margin-bottom: 12px;font-size: 16px;">Yoga Foam Block  -Dark Grey</p>
+                            <p class="product-description">Yoga Foam Block  -Dark Grey</p>
                             <div class="card_ratings">
                                 <h6 class="rate_number">4.6/5</h6><i style=" color: gold;font-size: 16px " class="fa fa-star" aria-hidden="true"></i>
                             </div>
@@ -946,11 +943,11 @@
 
         <div class="twig"></div>
 
-            <div >  
-                <span class="clr_blue"></span>
-                <span class="clr_orange"></span>
-                <span class="clr_green"></span>
-            </div>
+        <div >  
+            <span class="clr-blue"></span>
+            <span class="clr-orange"></span>
+            <span class="clr-green"></span>
+        </div>
 
 
     </body>
